@@ -31,7 +31,7 @@ nav a{
     text-decoration: none;
     color: var(--bg-color);
     margin: 0rem 2rem 3rem 0rem;
-    font-size: 12rem;
+    font-size: 1.2rem;
 }
 footer{
     display: flex;
