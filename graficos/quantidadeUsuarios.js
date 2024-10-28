@@ -3,11 +3,11 @@ async function quantidadeUsuarios() {
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
-    const quantidadeUsuarios = Object.values(dados)
+    const quantidadeDeUsuarios  = Object.values(dados)
     const data = [
         {
            x : nomeDasRedes,
-           y : quantidadeUsuarios,
+           y : quantidadeDeUsuarios ,
            type: 'bar' 
         }
     ]
