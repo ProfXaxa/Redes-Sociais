@@ -12,7 +12,7 @@ async function quantidadeUsuariosPorRede() {
         }
     ]
     const grafico = document.createElement('div')
-        grafico.className = 'grafico'
+        grafico.className = 'graficos-section'
         document.getElementById('graficos-container').appendChild(graficos)
         Plotly.newPlot(grafico, data)
     
