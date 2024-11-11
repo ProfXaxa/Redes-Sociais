@@ -4,14 +4,14 @@ async function quantidadeUsuariosPorRede() {
     const dados = await res.json()
     const nomeDasRedes = Object.keys(dados)
     const quantidadeDeUsuarios  = Object.values(dados)
-    const data = [
-        {
-          x: 'nomeDasRedes',
-          y: quantidadeDeUsuarios,
-          type: 'bar',
-          marker: {
-            color: getComputedStyle(document.body).getPropertyValue('--primary-color')
-          } 
+   const data = [
+  {
+    x: 'nomeDasRedes',
+    y: quantidadeDeUsuarios,
+    type: 'bar',
+    marker: {
+      color: getComputedStyle(document.body).getPropertyValue('--primary-color')
+    } 
         }
     ]
     const grafico = document.createElement('div')
