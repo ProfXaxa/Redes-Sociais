@@ -6,17 +6,18 @@ async function quantidadeUsuariosPorRede() {
     const quantidadeDeUsuarios  = Object.values(dados)
     const data = [
         {
-           x : nomeDasRedes,
-           y : quantidadeDeUsuarios ,
-           type: 'bar' 
+          x: 'nomeDasRedes',
+          y: quantidadeDeUsuarios,
+          type: 'bar',
+          marker: {
+            color: getComputedStyle(document.body).getPropertyValue('--primary-color')
+          } 
         }
     ]
     const grafico = document.createElement('div')
         grafico.className = 'grafico'
         document.getElementById('graficos-container').appendChild(grafico)
-        Plotly.newPlot(grafico, data)
-    
-
+        Plotly.newPlot(grafico, data) 
 
     console.log(dados)
 }
