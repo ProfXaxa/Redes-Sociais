@@ -24,7 +24,7 @@ async function quantidadeUsuariosPorRede() {
         title:{
             Text: 'Redes Sociais com mais usuários no mundo',
             x:0,
-            font:{      getCSS(variavel:any):String
+            font:{ 
                 color: getCSS("--primary-color")                
             }
         }
